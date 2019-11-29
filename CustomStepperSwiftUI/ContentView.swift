@@ -23,7 +23,7 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 struct CustomStepper: View {
-    @State var stepperValue = 0
+    @State var stepperValue: Double = 0.0
     var body: some View {
         
         VStack(spacing: 30) {
@@ -32,7 +32,7 @@ struct CustomStepper: View {
                     print($0)
                 }
                 
-                Text("\(stepperValue)")
+                Text("\(stepperValue, specifier: "%.1f")")
                     .foregroundColor(Color.red)
                 
                 RounderButton(title: "+", value: $stepperValue) {
@@ -44,18 +44,18 @@ struct CustomStepper: View {
                 Color.blue
                 
                 
-                SimpleButton(title: "-", value: $stepperValue) {
+                SimpleButton(title: "-", value: $stepperValue, rangeLimit: RangeLimit(min: 1.0, max: 5.0)) {
                     print($0)
                 }
                 
-                Text("\(stepperValue)")
+                Text("\(stepperValue, specifier: "%.1f")")
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .background(Color.yellow)
                     .foregroundColor(Color.red)
                     .layoutPriority(1)
                 
                 
-                SimpleButton(title: "+", value: $stepperValue) {
+                SimpleButton(title: "+", value: $stepperValue, rangeLimit: RangeLimit(min: 1.0, max: 5.0)) {
                     print($0)
                 }
                 
@@ -67,25 +67,34 @@ struct CustomStepper: View {
     }
 }
 
+struct RangeLimit {
+    let min: Double
+    let max: Double
+}
 
 struct SimpleButton: View {
     let title: String
-    @Binding var value: Int
-    let action: (Int) -> Void
+    @Binding var value: Double
+    let rangeLimit: RangeLimit
+    let action: (Double) -> Void
     
     var body: some View {
         Button(title) {
              if self.title == "+" {
-                self.value = self.value + 1
+                if self.value != self.rangeLimit.max {
+                    self.value = self.value + 1
+                }
             } else {
-                self.value = self.value - 1
+                if self.value != self.rangeLimit.min {
+                    self.value = self.value - 1
+                }
 
             }
             self.action(self.value)
         }
         .frame(width: 30, height: 30)
         .font(.title)
-        .padding(EdgeInsets(top: 12, leading: 12, bottom: 12, trailing: 12))
+        .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
         .foregroundColor(Color.white)
         .background(Color.blue)
  
@@ -96,8 +105,8 @@ struct SimpleButton: View {
 
 struct RounderButton: View {
     let title: String
-    @Binding var value: Int
-    let action: (Int) -> Void
+    @Binding var value: Double
+    let action: (Double) -> Void
     
     var body: some View {
         Button(title) {
