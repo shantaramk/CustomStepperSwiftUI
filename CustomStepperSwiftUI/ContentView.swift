@@ -11,8 +11,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-                   CustomStepper()
-               }
+            CustomStepper()
+        }
     }
 }
 
@@ -24,6 +24,9 @@ struct ContentView_Previews: PreviewProvider {
 
 struct CustomStepper: View {
     @State var stepperValue: Double = 0.0
+    @State var attempts: Int = 0
+    @State var plusAttempt: Bool = false
+    
     var body: some View {
         
         VStack(spacing: 30) {
@@ -46,6 +49,9 @@ struct CustomStepper: View {
                 
                 SimpleButton(title: "-", value: $stepperValue, rangeLimit: RangeLimit(min: 1.0, max: 5.0)) {
                     print($0)
+                    withAnimation(.spring()) {
+                        self.plusAttempt = false
+                    }
                 }
                 
                 Text("\(stepperValue, specifier: "%.1f")")
@@ -53,17 +59,44 @@ struct CustomStepper: View {
                     .background(Color.yellow)
                     .foregroundColor(Color.red)
                     .layoutPriority(1)
-                
+                    .modifier(SlideEffect(x: plusAttempt ? 10 : -10))
                 
                 SimpleButton(title: "+", value: $stepperValue, rangeLimit: RangeLimit(min: 1.0, max: 5.0)) {
                     print($0)
+                    withAnimation(.easeIn) {
+                        self.plusAttempt = true
+                    }
                 }
                 
             }
             .frame(width: 200, height: 50)
             .cornerRadius(10)
+            .background(Color.blue)
+            
+            
+            HStack(spacing: 0) {
+                Button(action: {}, label: {
+                    Image(systemName: "plus")
+                })
+                
+            }
+            
             Spacer()
+            
         }
+    }
+}
+
+struct SlideEffect: GeometryEffect {
+    var x: CGFloat = 0
+    
+    var animatableData: CGFloat {
+        get { x }
+        set { x = newValue }
+    }
+    
+    func effectValue(size: CGSize) -> ProjectionTransform {
+        return ProjectionTransform(CGAffineTransform(translationX: x, y: 0))
     }
 }
 
@@ -80,7 +113,7 @@ struct SimpleButton: View {
     
     var body: some View {
         Button(title) {
-             if self.title == "+" {
+            if self.title == "+" {
                 if self.value != self.rangeLimit.max {
                     self.value = self.value + 1
                 }
@@ -88,7 +121,7 @@ struct SimpleButton: View {
                 if self.value != self.rangeLimit.min {
                     self.value = self.value - 1
                 }
-
+                
             }
             self.action(self.value)
         }
@@ -97,7 +130,7 @@ struct SimpleButton: View {
         .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
         .foregroundColor(Color.white)
         .background(Color.blue)
- 
+        
     }
 }
 
@@ -110,11 +143,11 @@ struct RounderButton: View {
     
     var body: some View {
         Button(title) {
-             if self.title == "+" {
+            if self.title == "+" {
                 self.value = self.value + 1
             } else {
                 self.value = self.value - 1
-
+                
             }
             self.action(self.value)
         }

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "34E5757B-F7B6-4A53-8430-64AF4C27D62E"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B5E9B504-79C5-4835-811B-76F72917C5B4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CustomStepperSwiftUI/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ADBA40A7-4774-4C7E-8FBB-72AFEC6A8583"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CustomStepperSwiftUI/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "ADBA40A7-4774-4C7E-8FBB-72AFEC6A8583 - 1ccbf0ea35f6778b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(CustomStepperSwiftUI.RounderButton, SwiftUI.Text, CustomStepperSwiftUI.RounderButton)&gt;&gt;, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.cornerRadius(_: CoreGraphics.CGFloat, antialiased: Swift.Bool) -&gt; some&gt;&gt;.0, SwiftUI.HStack&lt;SwiftUI.Button&lt;SwiftUI.Image&gt;&gt;, SwiftUI.Spacer)&gt; in CustomStepperSwiftUI.CustomStepper.body.getter : some"
+                  moduleName = "CustomStepperSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shantaramk/Documents/My%20Personal/CustomStepperSwiftUI/CustomStepperSwiftUI/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "1031">
+               </Location>
+               <Location
+                  uuid = "ADBA40A7-4774-4C7E-8FBB-72AFEC6A8583 - f9fb1f119b0fa386"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Color, CustomStepperSwiftUI.SimpleButton, SwiftUI.ModifiedContent&lt;&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.layoutPriority(Swift.Double) -&gt; some&gt;&gt;.0, CustomStepperSwiftUI.Shake&gt;, CustomStepperSwiftUI.SimpleButton)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(CustomStepperSwiftUI.RounderButton, SwiftUI.Text, CustomStepperSwiftUI.RounderButton)&gt;&gt;, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.cornerRadius(_: CoreGraphics.CGFloat, antialiased: Swift.Bool) -&gt; some&gt;&gt;.0, SwiftUI.HStack&lt;SwiftUI.Button&lt;SwiftUI.Image&gt;&gt;, SwiftUI.Spacer)&gt; in CustomStepperSwiftUI.CustomStepper.body.getter : some"
+                  moduleName = "CustomStepperSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shantaramk/Documents/My%20Personal/CustomStepperSwiftUI/CustomStepperSwiftUI/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "578">
+               </Location>
+               <Location
+                  uuid = "ADBA40A7-4774-4C7E-8FBB-72AFEC6A8583 - f9fb1f119b0fa386"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Color, CustomStepperSwiftUI.SimpleButton, SwiftUI.ModifiedContent&lt;&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.layoutPriority(Swift.Double) -&gt; some&gt;&gt;.0, CustomStepperSwiftUI.Shake&gt;, CustomStepperSwiftUI.SimpleButton)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(CustomStepperSwiftUI.RounderButton, SwiftUI.Text, CustomStepperSwiftUI.RounderButton)&gt;&gt;, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.cornerRadius(_: CoreGraphics.CGFloat, antialiased: Swift.Bool) -&gt; some&gt;&gt;.0, SwiftUI.HStack&lt;SwiftUI.Button&lt;SwiftUI.Image&gt;&gt;, SwiftUI.Spacer)&gt; in CustomStepperSwiftUI.CustomStepper.body.getter : some"
+                  moduleName = "CustomStepperSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shantaramk/Documents/My%20Personal/CustomStepperSwiftUI/CustomStepperSwiftUI/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "3391">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "63E67AE4-234F-42F0-95DC-5BA540C8918C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CustomStepperSwiftUI/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "63E67AE4-234F-42F0-95DC-5BA540C8918C - 9f0f0ce772f86e43"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CustomStepperSwiftUI.CustomStepper.body.getter : some"
+                  moduleName = "CustomStepperSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shantaramk/Documents/My%20Personal/CustomStepperSwiftUI/CustomStepperSwiftUI/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "63E67AE4-234F-42F0-95DC-5BA540C8918C - 1ccbf0ea35f6778b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(CustomStepperSwiftUI.RounderButton, SwiftUI.Text, CustomStepperSwiftUI.RounderButton)&gt;&gt;, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.cornerRadius(_: CoreGraphics.CGFloat, antialiased: Swift.Bool) -&gt; some&gt;&gt;.0, SwiftUI.HStack&lt;SwiftUI.Button&lt;SwiftUI.Image&gt;&gt;, SwiftUI.Spacer)&gt; in CustomStepperSwiftUI.CustomStepper.body.getter : some"
+                  moduleName = "CustomStepperSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shantaramk/Documents/My%20Personal/CustomStepperSwiftUI/CustomStepperSwiftUI/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "379">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
